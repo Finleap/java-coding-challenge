@@ -13,8 +13,10 @@ package exercise;
  * The consumer should represent a legacy system that cannot consumer more than a certain number of price updates per second.
  * Otherwise it will fall over.
  * 
- * The task of this exercise is to extend the LoadHandler to limit the updates per second to the consumer to a certain given number (MAX_PRICE_UPDATES).
- * In order to achieve this, it is a allowed to drop price updates, since otherwise the application will run out of memory, if the application will keep all of them.
+ * The task of this exercise is to extend the LoadHandler to limit the updates per second to the consumer to a certain given
+ * number (MAX_PRICE_UPDATES).
+ * In order to achieve this, it is a allowed to drop price updates, since otherwise the application will run out of memory,
+ * if the application will keep all of them.
  * It is important that, if a price update will be send to the consumer, it has to be the most recent price.
  * 
  * Example:
